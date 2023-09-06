@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rufina', serif;
+    color: #808080;
+    font-size: 0.90rem; }
+  
+  html {
+    background: #111111; }
+  body {
+    background-color: #111111;
+    overflow-x: hidden; }
+  
+  .naranja {
+    color: #ceb98e; }
+  
+  .contenedorMenu {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 15px; }
+  
+  .contenedorHeader {
+    width: 450px;
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+  
+  .caja {
+    z-index: 2;
+    width: 100vw;
+    height: 118px;
+    background-color: #1B1B1B;
+    opacity: 0.5;
+    position: absolute; }
+  
+  .textoPrinc {
+    position: absolute;
+    z-index: 4; }
+  
+  h1 {
+    color: #000000;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  
+  h2 {
+    color: #C9852C;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+  
+  .btn {
+    margin: 0;
+    background-color: #1B1B1B;
+    font-size: 1.1rem;
+    color: #ceb98e; }
+    .btn:hover {
+      background-color: #E1B378; }
+    .btn:active {
+      background-color: #C9852C; }
+  
+  .boton {
+    display: flex;
+    justify-content: center; }
+    .boton a {
+      text-decoration: none;
+      color: #808080; }
+  
+  .navMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    /*z-index: 2;*/ }
+    .navMenu ul {
+      display: flex;
+      margin: 0px; }
+    .navMenu li,
+    .navMenu a {
+      list-style: none;
+      text-decoration: none;
+      margin: none;
+      color: #ceb98e;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
+      .navMenu li:hover,
+      .navMenu a:hover {
+        color: #C9852C; }
+  
+  .mainBanner {
+    height: 100vh;
+    background-image: url("./img/imagenhome.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position-x: right; }
+  
+  .precioBanner {
+    background-image: url("./img/fondoprecios.jpg"); }
+  
+  .servicioBanner {
+    background-image: url("../img/BG-servicios.webp"); }
+  
+  .contactoBanner {
+    background-image: url("./img/fondocontacto.jpg"); }
+  
+  .galeriaBanner {
+    background-image: url("../img/BG-galeria2.jpg"); }
+  
+
+  .favionImagen {
+    filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%); }
+  
+  .icono {
+    margin: 25px;
+    width: 40px;
+    filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    animation-name: colores;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: #E1B378; }
+  
+  .mainBG {
+    height: 50vh;
+    background-image: url("../img/sallon1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center; }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #111111;
+    margin-top: 10px;
+    margin: 0; }
+  
+  .footerTop {
+    display: flex;
+    justify-content: space-evenly; }
+    .footerTop a,
+    .footerTop p {
+      margin-top: 15px;
+      color: #808080; }
+    .footerTop a {
+      text-decoration: none; }
+  
+  .footerBottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px; }
+    .footerBottom p {
+      margin: 10px 0px;
+      color: #808080;
+      font-size: 0.75rem; }
+  
+  .redes {
+    margin: 0px 25px; }
+  
+  .iconoRedes {
+    margin: 3px;
+    width: 25px;
+    filter: invert(36%) sepia(0%) saturate(1262%) hue-rotate(144deg) brightness(93%) contrast(88%); }
+    .iconoRedes:hover {
+      filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
+      scale: 115%;
+      animation-name: redes;
+      animation-duration: 400ms; }
+  
+  @keyframes redes {
+    from {
+      scale: 100%; }
+    to {
+      scale: 115%; } }
+  
+  .seccionIndex {
+    display: flex;
+    flex-direction: row-reverse; }
+  
+  .seccionIndex {
+    display: flex;
+    flex-direction: row-reverse; }
+  
+  .imagenIndex {
+    width: 65vw; }
+  
+  .textoSeccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px; }
+    .textoSeccion h3 {
+      color: #ceb98e;
+      text-align: left; }
+    .textoSeccion p {
+      font-size: 1.25rem;
+      color: #808080;
+      text-align: left; }
+  
+  .Alt {
+    flex-direction: row; }
+  
+  .derecha {
+    padding: 20px;
+    align-items: flex-end; }
+    .derecha h3,
+    .derecha p {
+      text-align: right; }
+  
+  .alternativo {
+    --bs-gutter-x:1rem; }
+  
+  .equipo {
+    display: flex;
+    margin: 40px 10px 10px 10px;
+    justify-content: space-between; }
+  
+  .cardEquipo {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 450px; }
+    .cardEquipo p {
+      font-size: 1.15rem;
+      margin: 5px;
+      color: #808080;
+      text-align: center; }
+  
+  .muestra {
+    width: 30vw; }
+  
+
+  .imgEquipoIndex {
+    max-width: none;
+    width: 30vw; }
+  
+  .navbar-toggler {
+    border: 0px solid #ceb98e;
+    scale: 120%;
+    margin-bottom: 10px; }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28206, 185, 142, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  
+  .servicioCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin: 15px 5px;
+    overflow: hidden; }
+    .servicioCard h3 {
+      color: #ceb98e;
+      text-align: center; }
+  
+  .elementosServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  
+  .imgServicio {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px; }
+  
+  .margen {
+    margin-top: 5px; }
+  
+  .contenedorPrecios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedorPrecios h3,
+    .contenedorPrecios p {
+      margin: 0;
+      margin: 10px; }
+    .contenedorPrecios h3 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #E1B378; }
+    .contenedorPrecios p {
+      text-align: center; }
+  
+  .subtitulo {
+    font-size: 1.25rem;
+    text-transform: uppercase; }
+  
+  .precioCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid #ceb98e;
+    border-right: 1px solid #ceb98e;
+    padding: 10px;
+    margin: 35px 10px;
+    height: 200px; }
+    .precioCard h4,
+    .precioCard .precio {
+      color: #ceb98e; }
+    .precioCard p {
+      margin: 0; }
+  
+  .precioTexto {
+    font-size: 1.15rem; }
+  
+  .precio {
+    font-size: 2rem; }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 30px; }
+  
+  .campo, .areaTexto {
+    width: 50vw;
+    height: 30px;
+    background-color: #111111;
+    border: 1px solid #808080;
+    color: #ceb98e;
+    border-radius: 3px;
+    padding-left: 10px; }
+    .campo:focus, .areaTexto:focus {
+      outline: #E1B378;
+      border: 1px solid #E1B378; }
+  
+  .areaTexto {
+    height: 100px;
+    padding-top: 10px; }
+  
+  .informacion {
+    margin: 20px 5px; }
+  
+  .contacto {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contacto p {
+      margin: 0; }
+    .contacto img {
+      width: 30px;
+      filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+      margin-bottom: 5px; }
+    .contacto a {
+      text-decoration: none;
+      color: #808080; }
+  
+  .galeria {
+    margin: 5px; }
+  
+  .img-galeria {
+    border-radius: 10px;
+    border: 1px solid #ceb98e;
+    margin: 10px 0px; }
+  
+  .img-nosotros {
+    margin: 10px 0px; }
+  
+  .textoDescripcion {
+    font-size: 1rem; }
+  
+  .centrado {
+    text-align: center;
+    margin: 10px; }
+  
+  .nosotrosCentral {
+    display: flex; }
+  
+  .nosotrosTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    margin: 5px 0px;
+    padding: 10px; }
+    .nosotrosTexto p {
+      margin: 10px 0px;
+      font-size: calc(1rem + 0.25vw);
+      text-align: justify; }
+    .nosotrosTexto h3 {
+      color: #E1B378;
+      text-transform: uppercase;
+      text-align: center; }
+      .nosotrosTexto h3::after {
+        color: red; }
+  
+  .nosotrosImagen {
+    width: 50vw; }
+  
+  .containerImgEquipo {
+    text-align: center; }
+  
+  .whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%); }
+  
+  .iconows {
+    width: 45px; }
+  
+  .ws {
+    display: none; }
+  
+  @media (max-width: 576px) {
+    .mainBanner {
+      height: 100vh;
+      background-image: url("../img/BG-1-M.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-clip: content-box;
+      background-position-x: right;
+      background-image: url("../img/BG-1-S.webp"); }
+    .precioBanner {
+      background-image: url("../img/BG-precios-S.webp"); }
+    .servicioBanner {
+      background-image: url("../img/BG-servicios-2.webp"); }
+    .contactoBanner {
+      background-image: url("../img/BG-contacto-S.webp"); }
+    .galeriaBanner {
+      background-image: url("../img/BG-galeria-S.webp"); }
+    .nosotrosBanner {
+      background-image: url("../img/BG-nosotros.webp");
+      background-position-x: center; }
+    .contenedorHeader {
+      height: 60vh;
+      width: 70%;
+      position: absolute;
+      top: 50vh;
+      left: 15vw; }
+    h1 {
+      font-size: 2.25rem; }
+    h2 {
+      font-size: 1.75rem; }
+    .seccionIndex {
+      flex-wrap: wrap; }
+    .imagenIndex {
+      width: 100vw; }
+    .textoSeccion {
+      align-items: center;
+      padding: 15px; }
+      .textoSeccion h3,
+      .textoSeccion p {
+        text-align: center; }
+      .textoSeccion h3 {
+        font-size: calc(1.2rem + .3vw); }
+      .textoSeccion p {
+        font-size: 0.9rem; }
+    .testimonials {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .cardTestimonial {
+      justify-content: center;
+      flex-direction: column;
+      width: 95vw;
+      min-height: 150px;
+      margin: 10px 0px; }
+    .equipo {
+      flex-direction: column; }
+    .cardEquipo {
+      width: 95vw;
+      height: 92vh;
+      margin: 5px; }
+      .cardEquipo p {
+        margin-top: 25px; }
+    .corta {
+      height: 85vh; }
+      .corta p {
+        margin-top: 5px; }
+    .imgEquipo {
+      width: 95vw;
+      height: 80vh; }
+    .imgEquipoIndex {
+      max-width: none;
+      width: 95vw; }
+    .imgServicio {
+      min-width: 300px; }
+    .precioCard {
+      margin: 35px 45px; }
+    .campo, .areaTexto {
+      width: 85vw; }
+    .nosotrosCentral {
+      flex-direction: column;
+       }
+    .nosotrosTexto,
+    .nosotrosImagen {
+      width: 100vw; }
+      .nosotrosTexto p,
+      .nosotrosImagen p {
+        text-align: center; }
+    .iconows {
+      display: none; }
+    .ws {
+      display: flex; } }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .mainBanner {
+      height: 100vh;
+      background-image: url("../img/BG-1-M.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-clip: content-box;
+      background-position-x: right; }
+    .precioBanner {
+      background-image: url("../img/BG-precios-M.webp"); }
+    .servicioBanner {
+      background-image: url("../img/BG-servicios-2.webp"); }
+    .contactoBanner {
+      background-image: url("../img/BG-contacto-S.webp"); }
+    .galeriaBanner {
+      background-image: url("../img/BG-galeria-S.webp"); }
+    .nosotrosBanner {
+      background-image: url("../img/BG-nosotros.webp");
+      background-position-x: center; }
+    .contenedorHeader {
+      height: 50vh;
+      width: 70%;
+      position: absolute;
+      top: 50vh;
+      left: 15vw; }
+    h1 {
+      font-size: 3rem; }
+    h2 {
+      font-size: 2.25rem; }
+    .imagenIndex {
+      width: 50vw; }
+    .testimonials {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .cardTestimonial {
+      justify-content: center;
+      flex-direction: column;
+      width: 85vw;
+      min-height: 150px;
+      margin: 10px 0px; }
+    .textoSeccion {
+      align-items: center;
+      padding: 15px; }
+      .textoSeccion h3,
+      .textoSeccion p {
+        text-align: center; }
+      .textoSeccion h3 {
+        font-size: calc(1.2rem + .3vw); }
+      .textoSeccion p {
+        font-size: 0.9rem; }
+    .precioCard {
+      margin: 35px 45px; }
+    .campo, .areaTexto {
+      width: 75vw; }
+    .nosotrosCentral {
+      flex-direction: column; }
+    .nosotrosTexto,
+    .nosotrosImagen {
+      width: 100vw; }
+      .nosotrosTexto p,
+      .nosotrosImagen p {
+        text-align: center; } }
