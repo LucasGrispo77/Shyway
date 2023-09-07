@@ -93,7 +93,7 @@
   
   .mainBanner {
     height: 100vh;
-    background-image: url("./img/imagenhome.webp");
+    background-image: url("./img/fondohome.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -102,31 +102,30 @@
   .precioBanner {
     background-image: url("./img/fondoprecios.jpg"); }
   
-  .servicioBanner {
-    background-image: url("../img/BG-servicios.webp"); }
-  
   .contactoBanner {
     background-image: url("./img/fondocontacto.jpg"); }
   
   .galeriaBanner {
-    background-image: url("../img/BG-galeria2.jpg"); }
+    background-image: url("./img/fondogaleria.jpg"); }
   
-
+  .nosotrosBanner {
+    background-image: url("./img/fondonosotros.jpg");
+  }
   .favionImagen {
     filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%); }
   
   .icono {
     margin: 25px;
-    width: 40px;
-    filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    width: 100px;
+    filter: invert(94%) sepia(76%) brightness(88%) contrast(88%);
     animation-name: colores;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    color: #E1B378; }
+    }
   
   .mainBG {
     height: 50vh;
-    background-image: url("../img/sallon1.webp");
+    background-image: url("./img/fondohome.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center; }
@@ -247,8 +246,6 @@
     scale: 120%;
     margin-bottom: 10px; }
   
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28206, 185, 142, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   
   .servicioCard {
     display: flex;
@@ -422,22 +419,20 @@
   @media (max-width: 576px) {
     .mainBanner {
       height: 100vh;
-      background-image: url("../img/BG-1-M.webp");
+      background-image: url("./img/fondohome.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-clip: content-box;
       background-position-x: right;
-      background-image: url("../img/BG-1-S.webp"); }
+      background-image: url("./img/fondohome.jpg"); }
     .precioBanner {
-      background-image: url("../img/BG-precios-S.webp"); }
-    .servicioBanner {
-      background-image: url("../img/BG-servicios-2.webp"); }
+      background-image: url("./img/fondoprecios.jpg"); }
     .contactoBanner {
-      background-image: url("../img/BG-contacto-S.webp"); }
+      background-image: url("./img/fondocontacto.jpg"); }
     .galeriaBanner {
-      background-image: url("../img/BG-galeria-S.webp"); }
+      background-image: url("./img/fondogaleria.jpg"); }
     .nosotrosBanner {
-      background-image: url("../img/BG-nosotros.webp");
+      background-image: url("./img/fondonosotos.webp");
       background-position-x: center; }
     .contenedorHeader {
       height: 60vh;
@@ -514,21 +509,19 @@
   @media (min-width: 577px) and (max-width: 768px) {
     .mainBanner {
       height: 100vh;
-      background-image: url("../img/BG-1-M.webp");
+      background-image: url("./img/fondohome.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-clip: content-box;
       background-position-x: right; }
     .precioBanner {
-      background-image: url("../img/BG-precios-M.webp"); }
-    .servicioBanner {
-      background-image: url("../img/BG-servicios-2.webp"); }
+      background-image: url("./img/fondoprecios.jpg"); }
     .contactoBanner {
-      background-image: url("../img/BG-contacto-S.webp"); }
+      background-image: url("./img/fondocontacto.jpg"); }
     .galeriaBanner {
-      background-image: url("../img/BG-galeria-S.webp"); }
+      background-image: url("./img/fondogaleria.jpg"); }
     .nosotrosBanner {
-      background-image: url("../img/BG-nosotros.webp");
+      background-image: url("./img/fondonosotos.webp");
       background-position-x: center; }
     .contenedorHeader {
       height: 50vh;
@@ -542,16 +535,6 @@
       font-size: 2.25rem; }
     .imagenIndex {
       width: 50vw; }
-    .testimonials {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center; }
-    .cardTestimonial {
-      justify-content: center;
-      flex-direction: column;
-      width: 85vw;
-      min-height: 150px;
-      margin: 10px 0px; }
     .textoSeccion {
       align-items: center;
       padding: 15px; }
